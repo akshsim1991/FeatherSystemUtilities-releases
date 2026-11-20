@@ -1,0 +1,10 @@
+{
+  "version": "3.5.0",
+  "date": "20 November 2026",
+  "notes": "Phase 3: dashboard (device model, Windows Update, live activity opt-in, storage trend, review list, organization detection), Microsoft Store apps and Windows updates in the uninstaller, startup boot impact, license verification, SBOM, privacy policy, signing tooling. Updates now also work from the project repo before a dedicated releases repo exists.",
+  "windows": {
+    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.5.0.exe",
+    "size": 2358153,
+    "sha256": "ceb1121f75927c0c567e16dfcb529d3325650632278c98dc607100ba06c2e913"
+  }
+}

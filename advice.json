@@ -1,0 +1,861 @@
+{
+ "version": "2026.11.20",
+ "updated": "20 November 2026",
+ "note": "Suggestions only. Feather never disables anything without your confirmation.",
+ "startup": [
+  {
+   "c": [
+    "securityhealth",
+    "windows security",
+    "windows defender",
+    "msascui"
+   ],
+   "v": "keep",
+   "r": "Part of Windows Security. Disabling it hides protection warnings."
+  },
+  {
+   "c": [
+    "mcafee",
+    "norton",
+    "kaspersky",
+    "avast",
+    "avgui",
+    "avg antivirus",
+    "bitdefender",
+    "eset ",
+    "egui.exe",
+    "malwarebytes",
+    "sophos",
+    "trend micro",
+    "webroot",
+    "f-secure",
+    "crowdstrike",
+    "adguard"
+   ],
+   "v": "keep",
+   "r": "Security or privacy protection. Keep it unless you are replacing it with another product."
+  },
+  {
+   "c": [
+    "ctfmon"
+   ],
+   "v": "keep",
+   "r": "Windows text input service (keyboard layouts, handwriting, voice typing)."
+  },
+  {
+   "c": [
+    "adobeaamupdater",
+    "adobe acrobat update",
+    "acrobat update",
+    "adobearm",
+    "armsvc",
+    "adobe updater"
+   ],
+   "v": "safe",
+   "r": "Adobe updater. Adobe apps keep working; check for updates from inside the app when you want them."
+  },
+  {
+   "c": [
+    "adobe creative cloud",
+    "creative cloud",
+    "ccxprocess",
+    "cclibrary",
+    "adobe desktop service"
+   ],
+   "v": "optional",
+   "r": "Adobe Creative Cloud background apps. Adobe programs still open without them; sync and update notices pause."
+  },
+  {
+   "c": [
+    "googleupdate",
+    "google update",
+    "googleupdater"
+   ],
+   "v": "optional",
+   "r": "Keeps Chrome and other Google apps updated. Disabling can leave your browser out of date, which is a security risk."
+  },
+  {
+   "c": [
+    "jusched",
+    "jucheck",
+    "java update",
+    "java(tm) update"
+   ],
+   "v": "safe",
+   "r": "Java updater. Java programs still run."
+  },
+  {
+   "c": [
+    "spotify"
+   ],
+   "v": "safe",
+   "r": "Music app. Starts with Windows only for convenience; open it yourself when needed."
+  },
+  {
+   "c": [
+    "discord"
+   ],
+   "v": "safe",
+   "r": "Chat app. You can open it yourself when needed."
+  },
+  {
+   "c": [
+    "steamwebhelper",
+    "steam.exe",
+    "steam client bootstrapper",
+    "steam\\steam"
+   ],
+   "v": "safe",
+   "r": "Game launcher. Open it yourself when you want to play."
+  },
+  {
+   "c": [
+    "epicgameslauncher",
+    "epic games launcher"
+   ],
+   "v": "safe",
+   "r": "Game launcher. Open it yourself when you want to play."
+  },
+  {
+   "c": [
+    "eadesktop",
+    "ea desktop",
+    "origin.exe",
+    "ubisoft game launcher",
+    "upc.exe",
+    "battle.net",
+    "blizzard"
+   ],
+   "v": "safe",
+   "r": "Game launcher. Open it yourself when you want to play."
+  },
+  {
+   "c": [
+    "skype"
+   ],
+   "v": "safe",
+   "r": "Chat/calling app. Open it yourself when needed."
+  },
+  {
+   "c": [
+    "msteams",
+    "ms-teams",
+    "teams.exe",
+    "microsoft teams"
+   ],
+   "v": "safe",
+   "r": "Chat/meeting app. Open it yourself when needed; you may miss message notifications until you do."
+  },
+  {
+   "c": [
+    "zoom",
+    "zoomopener"
+   ],
+   "v": "safe",
+   "r": "Meeting app. Open it yourself or from a meeting link."
+  },
+  {
+   "c": [
+    "slack",
+    "whatsapp",
+    "telegram",
+    "viber",
+    "wechat",
+    "line.exe"
+   ],
+   "v": "optional",
+   "r": "Messaging app. Disabling means no notifications until you open it."
+  },
+  {
+   "c": [
+    "utorrent",
+    "bittorrent",
+    "qbittorrent",
+    "deluge"
+   ],
+   "v": "safe",
+   "r": "Torrent client. It only needs to run while you are downloading."
+  },
+  {
+   "c": [
+    "ituneshelper",
+    "ipodservice",
+    "apple push",
+    "applemobiledevice",
+    "itunes"
+   ],
+   "v": "safe",
+   "r": "Apple helper for iTunes/iPod. iTunes still works when opened."
+  },
+  {
+   "c": [
+    "icloud"
+   ],
+   "v": "optional",
+   "r": "iCloud sync for photos and drive. Disabling pauses syncing until you open it."
+  },
+  {
+   "c": [
+    "dropbox"
+   ],
+   "v": "optional",
+   "r": "File sync. Disabling stops syncing until you open Dropbox."
+  },
+  {
+   "c": [
+    "onedrive"
+   ],
+   "v": "optional",
+   "r": "OneDrive file sync and backup of Desktop/Documents. Disabling stops syncing until you open it."
+  },
+  {
+   "c": [
+    "googledrivefs",
+    "google drive",
+    "backupandsync"
+   ],
+   "v": "optional",
+   "r": "Google Drive sync. Disabling stops syncing until you open it."
+  },
+  {
+   "c": [
+    "ccleaner",
+    "piriform"
+   ],
+   "v": "safe",
+   "r": "CCleaner background monitoring/updater. Not needed for the PC to work."
+  },
+  {
+   "c": [
+    "advanced systemcare",
+    "asc.exe",
+    "iobit",
+    "driver booster",
+    "iobitunlocker",
+    "ascsafefolder"
+   ],
+   "v": "safe",
+   "r": "Third-party 'optimizer' helper. Not needed for Windows; it mainly runs reminders and scans."
+  },
+  {
+   "c": [
+    "cortana"
+   ],
+   "v": "safe",
+   "r": "Voice assistant. Not needed for Windows to run."
+  },
+  {
+   "c": [
+    "microsoftedgeautolaunch",
+    "msedge.exe --no-startup-window",
+    "edge auto launch"
+   ],
+   "v": "safe",
+   "r": "Pre-loads Edge so it opens faster. Edge still works without it."
+  },
+  {
+   "c": [
+    "microsoftedgeupdate",
+    "microsoft edge update"
+   ],
+   "v": "optional",
+   "r": "Updates Microsoft Edge. Disabling can leave the browser out of date."
+  },
+  {
+   "c": [
+    "bonjour",
+    "mdnsresponder"
+   ],
+   "v": "optional",
+   "r": "Apple Bonjour discovery. Only needed by some Apple and printer software."
+  },
+  {
+   "c": [
+    "opera",
+    "yandex",
+    "browser assistant",
+    "browserassistant"
+   ],
+   "v": "safe",
+   "r": "Browser helper or assistant. Not needed for the browser to work."
+  },
+  {
+   "c": [
+    "onenote",
+    "ms-onenote",
+    "onenotem"
+   ],
+   "v": "safe",
+   "r": "OneNote quick-capture helper. OneNote still works without it."
+  },
+  {
+   "c": [
+    "officeclicktorun",
+    "office updater"
+   ],
+   "v": "optional",
+   "r": "Updates Microsoft Office. Disabling can leave Office out of date."
+  },
+  {
+   "c": [
+    "razer",
+    "synapse"
+   ],
+   "v": "caution",
+   "r": "Razer device software. Disabling can turn off keyboard/mouse lighting, macros and profiles."
+  },
+  {
+   "c": [
+    "lghub",
+    "logitech",
+    "logi "
+   ],
+   "v": "caution",
+   "r": "Logitech device software. Disabling can turn off custom buttons and profiles."
+  },
+  {
+   "c": [
+    "icue",
+    "corsair",
+    "steelseries",
+    "hyperx"
+   ],
+   "v": "caution",
+   "r": "Gaming device software. Disabling can turn off lighting, macros and profiles."
+  },
+  {
+   "c": [
+    "nvbackend",
+    "geforce experience",
+    "nvidia share",
+    "nvcontainer",
+    "nvidia"
+   ],
+   "v": "caution",
+   "r": "NVIDIA helper. The graphics driver itself is unaffected, but overlays, recording and driver notices may stop."
+  },
+  {
+   "c": [
+    "igfxtray",
+    "igfxpers",
+    "hkcmd",
+    "igfxem",
+    "intel(r) graphics",
+    "intel graphics",
+    "igcc"
+   ],
+   "v": "caution",
+   "r": "Intel graphics helper. Display hotkeys and some screen settings may stop working."
+  },
+  {
+   "c": [
+    "radeon",
+    "amd software",
+    "amdrsserv",
+    "atieclxx",
+    "cnext",
+    "amd external events"
+   ],
+   "v": "caution",
+   "r": "AMD graphics helper. Overlays and some display features may stop working."
+  },
+  {
+   "c": [
+    "rtkngui",
+    "rthdvcpl",
+    "realtek hd audio",
+    "rtkaudu",
+    "realtek audio",
+    "waves",
+    "maxxaudio",
+    "nahimic",
+    "dolby"
+   ],
+   "v": "caution",
+   "r": "Audio control software. Disabling can remove audio effects, headphone/jack detection or equalizer settings."
+  },
+  {
+   "c": [
+    "synaptics",
+    "syntp",
+    "elantech",
+    "elan ",
+    "touchpad",
+    "alps pointing"
+   ],
+   "v": "caution",
+   "r": "Touchpad driver helper. Gestures and settings may stop working."
+  },
+  {
+   "c": [
+    "bluetooth",
+    "btmshellex",
+    "bttray"
+   ],
+   "v": "caution",
+   "r": "Bluetooth helper. Bluetooth tray controls may stop working."
+  },
+  {
+   "c": [
+    "wacom"
+   ],
+   "v": "caution",
+   "r": "Pen tablet driver helper. Pen pressure and buttons may stop working."
+  },
+  {
+   "c": [
+    "hotkey",
+    "hpmsgsvc",
+    "lenovo",
+    "dell ",
+    "alienware",
+    "asus",
+    "armoury",
+    "acer",
+    "msi "
+   ],
+   "v": "caution",
+   "r": "PC maker utility. It may control hotkeys, battery or fan settings; check what it does before disabling."
+  },
+  {
+   "c": [
+    "7-zip",
+    "7zip",
+    "7-zip32"
+   ],
+   "v": "optional",
+   "r": "Adds 7-Zip to the right-click menu. Disabling only removes those menu items."
+  },
+  {
+   "c": [
+    "winrar",
+    "rarext"
+   ],
+   "v": "optional",
+   "r": "Adds WinRAR to the right-click menu. Disabling only removes those menu items."
+  },
+  {
+   "c": [
+    "optanecontextmenu",
+    "enhancedstorageshell",
+    "safefolderext",
+    "contextmenuhandler"
+   ],
+   "v": "optional",
+   "r": "Right-click menu extension. Disabling only removes that menu entry."
+  }
+ ],
+ "services": [
+  {
+   "n": [
+    "rpcss",
+    "rpceptmapper",
+    "dcomlaunch",
+    "bfe",
+    "mpssvc",
+    "windefend",
+    "wdnissvc",
+    "securityhealthservice",
+    "wscsvc",
+    "eventlog",
+    "eventsystem",
+    "dhcp",
+    "dnscache",
+    "nsi",
+    "lanmanworkstation",
+    "winmgmt",
+    "schedule",
+    "themes",
+    "audiosrv",
+    "audioendpointbuilder",
+    "plugplay",
+    "power",
+    "profsvc",
+    "cryptsvc",
+    "trustedinstaller",
+    "usermanager",
+    "gpsvc",
+    "samss",
+    "lsm",
+    "brokerinfrastructure",
+    "systemeventsbroker",
+    "staterepository",
+    "coremessagingregistrar",
+    "keyiso",
+    "wcmsvc",
+    "netprofm",
+    "nlasvc",
+    "sens",
+    "shellhwdetection",
+    "netman",
+    "timebrokersvc",
+    "usosvc",
+    "dispbrokerdesktopsvc",
+    "wpnservice",
+    "wpnuserservice"
+   ],
+   "v": "keep",
+   "r": "Core Windows service. Disabling it can stop Windows, networking, security or sign-in from working."
+  },
+  {
+   "n": [
+    "wuauserv",
+    "bits",
+    "dosvc",
+    "usosvc"
+   ],
+   "v": "caution",
+   "r": "Windows Update service. Disabling it stops security updates."
+  },
+  {
+   "n": [
+    "fax"
+   ],
+   "v": "safe",
+   "r": "Fax service. Only needed if you send faxes from this PC."
+  },
+  {
+   "n": [
+    "remoteregistry"
+   ],
+   "v": "safe",
+   "r": "Lets other computers change this PC's registry. Disabling is safer for most people."
+  },
+  {
+   "n": [
+    "diagtrack"
+   ],
+   "v": "optional",
+   "r": "Connected User Experiences and Telemetry: sends diagnostic data to Microsoft. Windows works without it."
+  },
+  {
+   "n": [
+    "dmwappushservice",
+    "dmwappushsvc"
+   ],
+   "v": "optional",
+   "r": "Routes push messages for device management and telemetry. Safe to disable on a personal PC."
+  },
+  {
+   "n": [
+    "mapsbroker"
+   ],
+   "v": "optional",
+   "r": "Downloaded Maps Manager. Only needed by the Maps app."
+  },
+  {
+   "n": [
+    "retaildemo"
+   ],
+   "v": "safe",
+   "r": "Retail demo mode used in shops."
+  },
+  {
+   "n": [
+    "xblauthmanager",
+    "xblgamesave",
+    "xboxgipsvc",
+    "xboxnetapisvc"
+   ],
+   "v": "optional",
+   "r": "Xbox services. Only needed for Xbox app sign-in, game saves and Game Pass features."
+  },
+  {
+   "n": [
+    "wmpnetworksvc"
+   ],
+   "v": "safe",
+   "r": "Shares Windows Media Player libraries on the network."
+  },
+  {
+   "n": [
+    "lfsvc"
+   ],
+   "v": "optional",
+   "r": "Geolocation service. Only needed by apps that use your location."
+  },
+  {
+   "n": [
+    "phonesvc"
+   ],
+   "v": "optional",
+   "r": "Phone service used by the Your Phone / Phone Link features."
+  },
+  {
+   "n": [
+    "wpcmonsvc"
+   ],
+   "v": "optional",
+   "r": "Parental controls. Only needed if you use Family Safety on this PC."
+  },
+  {
+   "n": [
+    "scardsvr",
+    "scdeviceenum",
+    "scpolicysvc"
+   ],
+   "v": "optional",
+   "r": "Smart card support. Only needed if you use smart cards."
+  },
+  {
+   "n": [
+    "snmptrap"
+   ],
+   "v": "safe",
+   "r": "SNMP trap receiver for network management tools."
+  },
+  {
+   "n": [
+    "tabletinputservice",
+    "textinputmanagementservice"
+   ],
+   "v": "optional",
+   "r": "Touch keyboard and handwriting panel. Only needed with touch or pen input."
+  },
+  {
+   "n": [
+    "bthserv",
+    "bthavctpsvc",
+    "bluetoothuserservice"
+   ],
+   "v": "caution",
+   "r": "Bluetooth support. Disabling it turns off Bluetooth devices."
+  },
+  {
+   "n": [
+    "spooler"
+   ],
+   "v": "optional",
+   "r": "Print Spooler. Only needed if you print from this PC; disabling it reduces attack surface otherwise."
+  },
+  {
+   "n": [
+    "wsearch"
+   ],
+   "v": "optional",
+   "r": "Windows Search indexing. Disabling makes searching files slower but frees some disk and CPU use."
+  },
+  {
+   "n": [
+    "sysmain"
+   ],
+   "v": "optional",
+   "r": "SysMain (Superfetch) preloads apps. Mostly useful on hard disks; on SSDs it makes little difference."
+  },
+  {
+   "n": [
+    "trkwks"
+   ],
+   "v": "optional",
+   "r": "Distributed Link Tracking Client. Only helps keep shortcuts working across network moves."
+  },
+  {
+   "n": [
+    "icssvc",
+    "sharedaccess"
+   ],
+   "v": "optional",
+   "r": "Mobile hotspot / Internet Connection Sharing. Only needed if you share this PC's connection."
+  },
+  {
+   "n": [
+    "wecsvc"
+   ],
+   "v": "safe",
+   "r": "Event collector for remote event subscriptions."
+  },
+  {
+   "n": [
+    "wersvc"
+   ],
+   "v": "optional",
+   "r": "Windows Error Reporting. Disabling stops crash reports being sent to Microsoft."
+  },
+  {
+   "n": [
+    "ajrouter"
+   ],
+   "v": "safe",
+   "r": "AllJoyn router for Internet-of-Things apps."
+  },
+  {
+   "n": [
+    "alg"
+   ],
+   "v": "optional",
+   "r": "Application Layer Gateway for connection sharing."
+  },
+  {
+   "n": [
+    "pcasvc"
+   ],
+   "v": "caution",
+   "r": "Program Compatibility Assistant. Disabling can stop older programs getting compatibility help."
+  },
+  {
+   "n": [
+    "wisvc"
+   ],
+   "v": "safe",
+   "r": "Windows Insider Service. Only needed if you take Insider preview builds."
+  },
+  {
+   "n": [
+    "wfdsconmgrsvc",
+    "wifidirectsvc"
+   ],
+   "v": "optional",
+   "r": "Wi-Fi Direct. Only needed for casting/sharing over Wi-Fi Direct."
+  },
+  {
+   "n": [
+    "semgrsvc"
+   ],
+   "v": "optional",
+   "r": "Payments and NFC management."
+  },
+  {
+   "n": [
+    "netlogon"
+   ],
+   "v": "optional",
+   "r": "Only needed on a work/school domain."
+  },
+  {
+   "n": [
+    "workfolderssvc"
+   ],
+   "v": "optional",
+   "r": "Work Folders sync. Only needed on a work network that uses it."
+  },
+  {
+   "n": [
+    "frameserver"
+   ],
+   "v": "optional",
+   "r": "Lets several apps share the camera."
+  },
+  {
+   "n": [
+    "lltdsvc",
+    "lltdsvc"
+   ],
+   "v": "optional",
+   "r": "Network map discovery (Link-Layer Topology)."
+  },
+  {
+   "n": [
+    "p2pimsvc",
+    "p2psvc",
+    "pnrpautoreg",
+    "pnrpsvc"
+   ],
+   "v": "safe",
+   "r": "Peer-to-peer networking (HomeGroup-era). Rarely used."
+  },
+  {
+   "n": [
+    "sessionenv",
+    "termservice",
+    "umrdpservice"
+   ],
+   "v": "optional",
+   "r": "Remote Desktop. Disable if you never connect to this PC remotely."
+  },
+  {
+   "n": [
+    "winrm"
+   ],
+   "v": "optional",
+   "r": "Windows Remote Management. Only needed for remote administration."
+  },
+  {
+   "n": [
+    "ssdpsrv",
+    "upnphost"
+   ],
+   "v": "optional",
+   "r": "Discovers and hosts UPnP devices on the network."
+  },
+  {
+   "n": [
+    "diagnosticshub.standardcollector.service"
+   ],
+   "v": "optional",
+   "r": "Diagnostics hub collector used by developer tools."
+  },
+  {
+   "n": [
+    "gupdate",
+    "gupdatem",
+    "googleupdaterservice",
+    "googlechromeelevationservice"
+   ],
+   "v": "optional",
+   "r": "Google updater. Disabling can leave Chrome out of date."
+  },
+  {
+   "n": [
+    "adobearmservice",
+    "adobeupdateservice",
+    "agsservice",
+    "agmservice"
+   ],
+   "v": "safe",
+   "r": "Adobe updater/licensing helper. Adobe apps still open."
+  },
+  {
+   "n": [
+    "mozillamaintenance"
+   ],
+   "v": "optional",
+   "r": "Firefox background updater. Firefox updates when you open it."
+  },
+  {
+   "n": [
+    "bonjour service",
+    "bonjour"
+   ],
+   "v": "optional",
+   "r": "Apple Bonjour discovery. Only needed by some Apple and printer software."
+  },
+  {
+   "n": [
+    "ipod service"
+   ],
+   "v": "safe",
+   "r": "Apple iPod helper."
+  },
+  {
+   "n": [
+    "apple mobile device service",
+    "applemobiledeviceservice"
+   ],
+   "v": "caution",
+   "r": "Needed to connect an iPhone/iPad to this PC. Disabling stops that connection."
+  },
+  {
+   "n": [
+    "steamclientservice"
+   ],
+   "v": "optional",
+   "r": "Steam helper service. Steam asks for it when installing games."
+  },
+  {
+   "n": [
+    "edgeupdate",
+    "edgeupdatem",
+    "microsoftedgeelevationservice"
+   ],
+   "v": "optional",
+   "r": "Updates Microsoft Edge. Disabling can leave Edge out of date."
+  },
+  {
+   "n": [
+    "clicktorunsvc"
+   ],
+   "v": "optional",
+   "r": "Microsoft Office updater/streaming. Disabling can leave Office out of date."
+  }
+ ]
+}
