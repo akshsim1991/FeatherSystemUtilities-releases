@@ -1,10 +1,10 @@
 {
-  "version": "3.5.1",
+  "version": "3.6.0",
   "date": "20 November 2026",
-  "notes": "Progress and results now appear in a dedicated status bar (with Cancel for scans) instead of floating pop-ups. Registry deletes of Explorer add-ons and other keys now retry in the other 32/64-bit view and with backup/restore privileges, and report the exact reason when they still fail.",
+  "notes": "Phase 3 remaining items: beta feature switches (Store app removal, Windows update uninstall, administrator helper), typed action records in the journal with how-to-undo, and an optional administrator helper that avoids restarting Feather as administrator.",
   "windows": {
-    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.5.1.exe",
-    "size": 2362119,
-    "sha256": "5888c01c4b11f72683b5f487a927c96947fd2cfe364cc432ca8d163fbba2dd7d"
+    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.6.0.exe",
+    "size": 2381172,
+    "sha256": "91ab41f063580005756b9c2ec95318b6c7e593afbfb49bf9b07d03ef3682d33e"
   }
 }
