@@ -1,0 +1,32 @@
+{
+ "version": "2026.11.24",
+ "note": "Known device problems: what they are, which safe automatic steps to try, and what to do next. Steps allowed: rescan, restart, enable, enableService. Then-actions allowed: markHarmless, checkUpdates, openSupport, restartPc.",
+ "rules": [
+  {"id":"esrt-firmware","title":"UEFI firmware-update device (ESRT)","match":{"hwid":["UEFI\\RES_"]},"severity":"harmless",
+   "diagnosis":"This is the small device Windows uses to hand firmware (BIOS) updates to your PC. Your PC's firmware describes it in a way Windows' built-in firmware driver rejects, so Windows marks it 'cannot start'. Nothing else is affected. The only consequence is that Windows Update cannot install BIOS/firmware updates for you automatically. Restarting or reinstalling it does not change the firmware, so these steps normally do not clear it.",
+   "steps":["rescan","restart"],"then":["markHarmless"],
+   "advice":["The real fix is a newer BIOS/UEFI from your PC maker. The BIOS card below shows your current version; compare it with the maker's support page.","If you do not need Windows to deliver firmware updates, you can leave this entry hidden. Nothing is wrong with the rest of the PC."],"bios":true},
+  {"id":"intel-me","title":"Intel Management Engine interface","match":{"hwid":["PCI\\VEN_8086&DEV_"],"name":["management engine","mei","heci"],"problem":[10,28,31,37,39,43]},"severity":"needs-driver",
+   "diagnosis":"Intel's Management Engine interface is not working. Daily use is normally unaffected, but some power, security and firmware features rely on it. It needs the driver that matches your PC model; the generic one in Windows is often missing or too old.",
+   "steps":["rescan"],"then":["checkUpdates","openSupport"],"advice":["Install the 'Intel Management Engine' (MEI) driver from your PC maker's support page for your exact model.","Restart the PC afterwards."],"bios":true},
+  {"id":"acpi-no-driver","title":"Platform device without a driver (ACPI)","match":{"hwid":["ACPI\\"],"problem":[28]},"severity":"needs-driver",
+   "diagnosis":"A built-in part of the PC (power button, hotkeys, sensors or platform controller) has no driver. These drivers come from the PC maker, not from Windows.",
+   "steps":["rescan"],"then":["checkUpdates","openSupport"],"advice":["Install the chipset / platform / hotkey drivers from your PC maker's support page."]},
+  {"id":"pci-no-driver","title":"Hardware without a driver (PCI)","match":{"hwid":["PCI\\"],"problem":[28]},"severity":"needs-driver",
+   "diagnosis":"A component inside the PC has no driver installed.","steps":["rescan"],"then":["checkUpdates","openSupport"],"advice":["Run Windows Update including optional updates, then install missing drivers from your PC maker."]},
+  {"id":"bluetooth","title":"Bluetooth adapter problem","match":{"class":["Bluetooth"],"problem":[10,31,37,43]},"severity":"fixable",
+   "diagnosis":"The Bluetooth adapter's driver loaded but the radio would not start. This is often cleared by restarting the adapter, or a full restart.","steps":["rescan","restart"],"then":["checkUpdates"],"advice":["Turn Bluetooth off and on in Windows Settings.","Restart the PC (not Shut down).","Install the Bluetooth driver from your PC maker."]},
+  {"id":"usb-43","title":"USB device reported a problem","match":{"class":["USB"],"problem":[43]},"severity":"hardware",
+   "diagnosis":"Windows stopped this USB device because it reported a problem. The cause is usually the cable, the port, or the device itself.","steps":["rescan"],"then":[],"advice":["Unplug it, wait 30 seconds, plug it into a different port (directly into the PC, not a hub).","Try another cable or another PC to see whether the device itself is faulty."]},
+  {"id":"display","title":"Graphics adapter problem","match":{"class":["Display"],"problem":[10,31,37,39,41,43]},"severity":"needs-driver",
+   "diagnosis":"The graphics driver did not start properly. A damaged or mismatched graphics driver is the usual cause.","steps":["rescan","restart"],"then":["checkUpdates","openSupport"],"advice":["Install the graphics driver from your PC maker (or NVIDIA/AMD/Intel).","Make a restore point first (Recovery page)."]},
+  {"id":"network","title":"Network adapter problem","match":{"class":["Net"],"problem":[10,31,37,43]},"severity":"fixable",
+   "diagnosis":"The network adapter's driver did not start properly.","steps":["rescan","restart"],"then":["checkUpdates","openSupport"],"advice":["Restart the PC.","Install the network driver from your PC maker (you may need another PC or a USB tether to download it)."]},
+  {"id":"unsigned","title":"Driver is not digitally signed","match":{"problem":[52]},"severity":"needs-driver",
+   "diagnosis":"Windows cannot verify this driver's digital signature, so it refuses to load it. Do not turn off signature enforcement to force it.","steps":[],"then":["checkUpdates","openSupport"],"advice":["Install a signed driver from the maker or Windows Update."]},
+  {"id":"disabled","title":"Device is turned off","match":{"problem":[22]},"severity":"fixable","diagnosis":"The device was disabled, by you, by a program or by policy.","steps":["enable"],"then":[],"advice":["If it turns itself off again, a policy or another program is disabling it."]},
+  {"id":"service-disabled","title":"Driver service is disabled","match":{"problem":[32]},"severity":"fixable","diagnosis":"The driver's service is set to Disabled, so the driver cannot start.","steps":["enableService","restart"],"then":[],"advice":["Something disabled the service on purpose (a cleaner or security tool). Check what changed it before relying on this device."]},
+  {"id":"needs-restart","title":"A restart is needed","match":{"problem":[14,21,38]},"severity":"fixable","diagnosis":"The device will work after Windows restarts. A repair or install is waiting to finish.","steps":[],"then":["restartPc"],"advice":["Use Start → Power → Restart (not Shut down)."]},
+  {"id":"not-connected","title":"Device is not connected","match":{"problem":[45]},"severity":"harmless","diagnosis":"Windows remembers a device that is not plugged in or powered right now.","steps":[],"then":["markHarmless"],"advice":["Reconnect the device if you still use it."]}
+ ]
+}
