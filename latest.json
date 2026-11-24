@@ -1,10 +1,10 @@
 {
-  "version": "3.6.0",
-  "date": "20 November 2026",
-  "notes": "Phase 3 remaining items: beta feature switches (Store app removal, Windows update uninstall, administrator helper), typed action records in the journal with how-to-undo, and an optional administrator helper that avoids restarting Feather as administrator.",
+  "version": "3.7.0",
+  "date": "24 November 2026",
+  "notes": "Drivers: new Problems tab explains why a device cannot start (Windows' problem code and failure status, driver service, Kernel-PnP log entries) and offers automatic repairs (rescan, restart device, enable, enable driver service, reinstall) and manual step-by-step fixes. Light/dark/auto theme switch.",
   "windows": {
-    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.6.0.exe",
-    "size": 2381172,
-    "sha256": "91ab41f063580005756b9c2ec95318b6c7e593afbfb49bf9b07d03ef3682d33e"
+    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.7.0.exe",
+    "size": 2413765,
+    "sha256": "068222ade6e24fc1eab9349f4b7aac7030460443edded5c4a118a77ec0772514"
   }
 }
