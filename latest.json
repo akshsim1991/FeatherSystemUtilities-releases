@@ -1,16 +1,16 @@
 {
-  "version": "3.10.0",
+  "version": "3.11.0",
   "date": "24 November 2026",
-  "notes": "Disk health, sign-in time before/after, right-click menu manager.",
+  "notes": "Driver store cleanup, winget app updates, per-process disk and network activity.",
   "windows": {
+    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.11.0.exe",
+    "size": 2619220,
+    "sha256": "843a57d81972fe6ab52daed6edfb7827943c9c6c3875465cc3756b791a7dcc40"
+  },
+  "previous": {
+    "version": "3.10.0",
     "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.10.0.exe",
     "size": 2527846,
     "sha256": "019646f77309874764b818c08aab8932f7b5a2c8d0704f00a2625e73a7a9b9f2"
-  },
-  "previous": {
-    "version": "3.9.0",
-    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.9.0.exe",
-    "size": 2510641,
-    "sha256": "279fbfa068e430d9f62af18ff4cf21672e26219d3eb0ec190410e53b6f8f95f4"
   }
 }
