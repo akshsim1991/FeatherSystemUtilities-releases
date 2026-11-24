@@ -1,16 +1,16 @@
 {
-  "version": "3.7.3",
+  "version": "3.8.0",
   "date": "24 November 2026",
-  "notes": "Self-test and local diagnostics log (also: FeatherSystemUtilities.exe --selftest), crash recording, interface errors caught and logged, web view recovery, long-list cap, busy-click protection, Open file location logging.",
+  "notes": "Security posture checklist, scheduled tasks manager, pattern exclusions.",
   "windows": {
+    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.8.0.exe",
+    "size": 2493831,
+    "sha256": "f8be4fe42b338730b085fae84345dfdfc2fcddb3a9eeaec771494ad24f7d3a4f"
+  },
+  "previous": {
+    "version": "3.7.3",
     "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.7.3.exe",
     "size": 2473907,
     "sha256": "e457ee3e86187b8053c9d48b57a9a6035a4d11ff316329a68876071995fea4e7"
-  },
-  "previous": {
-    "version": "3.7.2",
-    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.7.2.exe",
-    "size": 2445877,
-    "sha256": "7524380ed512648e1730bae000e8363b600e4b11dbd00ed50ac4556991a89b11"
   }
 }
