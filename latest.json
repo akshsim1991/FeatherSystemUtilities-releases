@@ -1,16 +1,16 @@
 {
-  "version": "3.8.0",
+  "version": "3.9.0",
   "date": "24 November 2026",
-  "notes": "Security posture checklist, scheduled tasks manager, pattern exclusions.",
+  "notes": "Service profiles and properties, more cleaner categories, large-file archive suggestions.",
   "windows": {
+    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.9.0.exe",
+    "size": 2510641,
+    "sha256": "279fbfa068e430d9f62af18ff4cf21672e26219d3eb0ec190410e53b6f8f95f4"
+  },
+  "previous": {
+    "version": "3.8.0",
     "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.8.0.exe",
     "size": 2493831,
     "sha256": "f8be4fe42b338730b085fae84345dfdfc2fcddb3a9eeaec771494ad24f7d3a4f"
-  },
-  "previous": {
-    "version": "3.7.3",
-    "url": "https://raw.githubusercontent.com/akshsim1991/FeatherSystemUtilities-releases/main/FeatherSystemUtilities-Setup-3.7.3.exe",
-    "size": 2473907,
-    "sha256": "e457ee3e86187b8053c9d48b57a9a6035a4d11ff316329a68876071995fea4e7"
   }
 }
